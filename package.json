@@ -1,14 +1,13 @@
 {
   "name": "vue-the-mask",
-  "version": "0.11.4",
+  "version": "0.11.5",
   "description": "Tiny (2KB) and dependency free mask input for Vue.js",
   "main": "dist/vue-the-mask.js",
   "scripts": {
     "size": "size-limit",
     "upgrade:check": "ncu",
     "upgrade:apply": "ncu -a",
-    "build": "vue build -t lib -n VueTheMask src && cp dist/VueTheMask.umd.min.js dist/vue-the-mask.js",
-    "build:win": "vue build -t lib -n VueTheMask src && copy /y dist\\VueTheMask.umd.min.js dist\\vue-the-mask.js",
+    "build": "vue build -t lib -n VueTheMask src/index.js && cp dist/VueTheMask.umd.min.js dist/vue-the-mask.js",
     "docs:build": "cd src/docs && vue build -d ../../docs/",
     "docs:serve": "serve ./",
     "start": "yarn dev",
@@ -19,8 +18,7 @@
     "e2e:start-fixture": "vue serve ./test/fixture.vue",
     "e2e:start-selenium": "selenium-standalone start",
     "e2e:run": "nightwatch ./test/nightwatch.js",
-    "dev": "cd src/docs && vue serve",
-    "dev:win": "cd src\\docs && vue serve"
+    "dev": "cd src/docs && vue serve"
   },
   "files": [
     "dist/",
