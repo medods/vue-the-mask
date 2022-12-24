@@ -59,7 +59,7 @@ export default function (el, binding) {
     el.dispatchEvent(event('input'))
   }
 
-  var newDisplay = masker(el.value, config.mask, true, config.tokens)
+  var newDisplay = masker(el.value, (config || {}).mask, true, config.tokens)
   if (newDisplay !== el.value) {
     el.value = newDisplay
     el.dispatchEvent(event('input'))
