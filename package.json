@@ -1,6 +1,6 @@
 {
   "name": "vue-the-mask",
-  "version": "0.11.6",
+  "version": "0.11.7",
   "description": "Tiny (2KB) and dependency free mask input for Vue.js",
   "main": "dist/vue-the-mask.js",
   "scripts": {
@@ -100,6 +100,6 @@
     "vue-template-compiler": "^2.5.16"
   },
   "dependencies": {
-    "start-server-and-test": "^1.15.5"
+    "start-server-and-test": "^2.0.3"
   }
 }
